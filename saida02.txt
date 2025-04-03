@@ -1,0 +1,20 @@
+ -> Encontrei um <Token: DIGITO, Lexema: 1, Tamanho: 1, Linha: 0, Coluna: 0>
+
+ -> Encontrei um <Token: IDENTIFICADOR, Lexema: a, Tamanho: 1, Linha: 1, Coluna: 0>
+
+
+ -> Encontrei um <Token: DIGITO, Lexema: 2, Tamanho: 1, Linha: 3, Coluna: 0>
+
+ -> Encontrei um <Token: IDENTIFICADOR, Lexema: b, Tamanho: 1, Linha: 4, Coluna: 0>
+
+ -> Encontrei um <Token: DIGITO, Lexema: 1, Tamanho: 1, Linha: 5, Coluna: 0>
+ -> Encontrei um <Token: IDENTIFICADOR, Lexema: a, Tamanho: 1, Linha: 5, Coluna: 1>
+
+ -> Encontrei um <Token: IDENTIFICADOR, Lexema: a2, Tamanho: 2, Linha: 6, Coluna: 0>
+
+ -> Encontrei um <Token: IDENTIFICADOR, Lexema: b1, Tamanho: 2, Linha: 7, Coluna: 0>
+
+ -> Encontrei um <Token: IDENTIFICADOR, Lexema: aba, Tamanho: 3, Linha: 8, Coluna: 0>
+
+ -> Encontrei um <Token: DIGITO, Lexema: 121, Tamanho: 3, Linha: 9, Coluna: 0>
+
