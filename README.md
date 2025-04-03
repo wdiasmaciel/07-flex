@@ -1,4 +1,4 @@
-# 06-jflex
+# 07-jflex
 
 ## Instalação:
 `sudo apt update`
@@ -38,12 +38,6 @@
  */
 
 /* Definição: seção para código do usuário. */
-
-%%
-
-/* Opções e Declarações: seção para diretivas e macros. */
-
-// Diretivas:
 %standalone         // Execução independente do analisador sintático.
 %line               // Permite usar yyline.
 %column             // Permite usar yycolumn.
@@ -54,6 +48,10 @@
         return yytext(); // Apenas retorna o valor de yytext().
     }
 %}
+
+%%
+
+/* Declarações: seção para macros. */
 
 // Macros:
 letra = [a-zA-Z]

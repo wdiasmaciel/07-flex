@@ -10,7 +10,7 @@
 /* Definição: seção para código do usuário. */
 
 %{
-    import java.lang.*;
+    import java.lang;
     public String getLexema() {
         return yytext(); // Apenas retorna o valor de yytext().
     }

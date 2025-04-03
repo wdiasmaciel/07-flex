@@ -7,21 +7,22 @@
 
 /* Definição: seção para código do usuário. */
 
+%{
+    import java.lang.*;
+    public String getLexema() {
+        return yytext(); // Apenas retorna o valor de yytext().
+    }
+%}
+
 %%
 
 /* Opções e Declarações: seção para diretivas e macros. */
 
 // Diretivas:
-%standalone         // Execução independente do analisador sintático.
-%line               // Permite usar yyline.
-%column             // Permite usar yycolumn.
-%class Scanner      // Troca o nome da classe Yylex para Scanner.
-
-%{
-    public String getLexema() {
-        return yytext(); // Apenas retorna o valor de yytext().
-    }
-%}
+%standalone    // Execução independente do analisador sintático.
+%line          // Permite usar yyline.
+%column        // Permite usar yycolumn.
+%class Scanner // Troca o nome da classe Yylex para Scanner.
 
 // Macros:
 letra = [a-zA-Z]
@@ -35,5 +36,5 @@ identificador = {letra}({letra}|{numero})*
  * o analisador léxico. 
  */
 
-{digito}        {System.out.println(" -> Encontrei um <Token: DIGITO, Lexema: "        + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
-{identificador} {System.out.println(" -> Encontrei um <Token: IDENTIFICADOR, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
+{digito}        {System.out.println(" -> Encontrei um <Token: DIGITO, Lexema: "        + yytext() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
+{identificador} {System.out.println(" -> Encontrei um <Token: IDENTIFICADOR, Lexema: " + yytext() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");}
